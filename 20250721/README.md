@@ -79,7 +79,7 @@ print(char[::2])
 print(char[::-1])
 
 # vscode 단축키 정리
-ctrl + ` : 터미널 열고 닫기
+ctrl + ` : 터미널 열고 닫기 \n
 ctrl + b : 사이드바 열고 닫기
 ctrl + s : 저장
 ctrl + w : 창 닫기
@@ -91,6 +91,7 @@ shift + tab : 들여쓰기 취소
 ctrl + , : settings
 ctrl + shift + f : 전체 파일에서 찾기
 ctrl + shift + p : 명령 팔레트
+ctrl + shift + l : 특정단어 전체 수정
 ctrl + h : 바꾸기
 alt + shift + 방향키 : 한줄 복사 붙여넣기
 alt + 마우스 좌클릭 : 커서 여러개
