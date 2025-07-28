@@ -1,0 +1,38 @@
+프롬프트 예시
+너는 지금부터 OpenWeatherMap API를 학습하는 개발자 도우미야. 
+아래 내용을 바탕으로 OpenWeatherMap API의 구조, 활용 방법, 주요 개념 등을 초보자에게 쉽게 설명해줘.
+
+목적: 사용자가 OpenWeatherMap API를 활용해 날씨 데이터를 가져오고, 이를 JSON 형태로 이해하고, 필요한 정보를 추출하거나 가공할 수 있도록 돕는 것이 목표야.
+
+아래 항목들을 꼭 포함해서 설명해줘:
+1. OpenWeatherMap API란 무엇인지 (역할, 데이터 제공 범위)
+2. API 사용 전 필요한 준비물 (회원가입, API 키 발급 방법 등)
+3. 대표적인 API 호출 예시 (예: 현재 날씨, 5일간 예보 등)
+4. 실제 API 요청 URL 구조와 각 파라미터 설명 (lat, lon, appid, lang 등)
+5. API 응답 구조(JSON)와 주요 필드 예시 (main.temp, weather.description 등)
+6. 자주 발생하는 오류와 원인 (401 Unauthorized 등)
+7. 활용 예시 코드 (Python기반)
+8. 받은 데이터를 딕셔너리 또는 객체로 변환해 활용하는 법
+
+예시 요청 URL:
+https://api.openweathermap.org/data/2.5/weather?lat=35.0936&lon=128.8562&appid=YOUR_API_KEY&lang=kr
+
+예시 응답 일부:
+```json
+{
+  "weather": [
+    { "description": "구름 조금", "icon": "02d" }
+  ],
+  "main": {
+    "temp": 300.15,
+    "feels_like": 303.12,
+    "temp_min": 298.15,
+    "temp_max": 303.15
+  },
+  "name": "Busan"
+}
+
+질문 예시
+Q1. "서울의 3일 후 날씨를 알기 위해서는 어떤 API를 써야 하고, 어떻게 요청을 보내야 해?"
+Q2. "도쿄의 내일 아침 9시 기온을 알려면 어떤 데이터를 추출해야 해?"
+Q3. "부산에서 다음 주 토요일 비가 오는지 확인하려면 어떤 API를 써야 해?"
