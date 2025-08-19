@@ -53,6 +53,15 @@ KFC(0)
 ``` python
 arr =['O', 'X']
 path = []
+name = ['A', 'B', 'C', 'D', 'E']
+
+def print_name():
+    for i in range(3):
+        if path[i] == 'O':
+            print(name[i], end='')
+    print()
+
+
 def kfc(lev):
     if lev == 3: # level: 3
         print_name() # 함수호출(이름출력)
@@ -87,6 +96,8 @@ for tar in range(1 << n): # 2의 n제곱
 ![비트연산 코드](./img/비트연산%20코드.png)
 
 # 조합
+a, b, c와 b, a, c는 같은 조합
+핵심: 앞에서 뽑았던 경우의 수를 제외하고 시작(start 매개변수 추가)
 ![조합](./img/조합.png)
 ## 기본 조합 코드
 ![기본 조합 코드](./img/기본조합코드.png)
