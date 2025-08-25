@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<style>
+  #red{
+    color: red;
+  }
+  .green{
+    color: green;
+  }
+  .orange{
+    color: orange !important; 
+  }
+</style>
+
+<body>
+  <h1>시험 단골 문제</h1>
+  <h2>css 적용 우선순위</h2> 
+  <ol>
+    <li>!important</li>
+    <li>인라인 style</li>
+    <li>selector (id > class)</li>
+    <li>순서상 마지막것이 적용</li>
+    <li>일반 태그 (h1, p ...)</li>
+   </ol>
+   <p id="red" class="green">color</p>
+   <p id="red" class="green" style="color: brown;">color</p>
+   <p id="red" class="orange" style="color: brown;">color</p>
+</body>
+</html>
