@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            border: 2px solid black;
+            padding: 30px; /*border 기준으로 안에 */
+            margin: 30px; /*border 기준으로 밖에 */
+            /* 기존대로라면 content의 width와 height만 계산 */
+            /* box-sizing: border-box;
+            -> width와 height계산에 padding과 border 포함 */
+            box-sizing: border-box;
+        }
+        .box1{
+            width: 400px;
+            height: 100px;
+        }
+        .box2{
+            /* 무엇을 기준으로?? */
+            /* 웹 브라우저의 50% */
+            width: 50%;
+            /* height는 퍼센트(%)를 사용하지 않는게 좋다. */
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+</body>
+</html>
