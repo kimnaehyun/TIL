@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 200px;
+            height: 100px;
+            /* 인라인 요소처럼 가로로 배치 */
+            display: inline-block;
+            border: 1px solid black;
+        }
+        #margin1{
+            /* 상 부터 시작해서 시계방향 <상> <우> <하> <좌> */
+            margin: 30px 50px 30px 50px;
+        }
+        #margin2{
+            /* <상하> <좌우> */
+            /* margin: 40px 20px; */
+            margin-right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- div#margin1+div#margin2 -->
+    <div id="margin1"></div>
+    <div id="margin2"></div>
+</body>
+</html>
