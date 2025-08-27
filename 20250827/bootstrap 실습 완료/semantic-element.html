@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100px;
+      position: relative;
+      top: 30px;
+
+    }
+
+    header {
+      text-align: center;
+      max-width: 1200px;
+      width: 100%;
+      margin: 0px auto;
+      background-color: rgb(181, 186, 191);
+    }
+
+    nav {
+      max-width: 1200px;
+      width: 100%;
+      margin: 0px auto;
+      background-color: rgb(231, 231, 216);
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+      gap: 32px;
+      list-style: none;
+    }
+
+    main {
+      height: 800px;
+      max-width: 1200px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      margin: 0px auto;
+      border: 1px solid lightgray;
+    }
+
+    article {
+      width: 60%;
+      border: 1px solid lightgray;
+      margin: 10px;
+      padding: 10px;
+    }
+
+    aside {
+      width: 35%;
+      border: 1px solid lightgray;
+      margin: 10px;
+      padding: 10px;
+    }
+
+    aside a {
+      text-decoration: none;
+    }
+
+    footer {
+      position: sticky;
+      bottom: 30px;
+      background-color: rgb(65, 67, 66);
+      color: white;
+      text-align: center;
+      max-width: 1200px;
+      width: 100%;
+      margin: 0px auto;
+    }
+  </style>
+
+
+</head>
+
+<body>
+  <header>
+    <h1>Header</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <article>
+      <h2>Article Title</h2>
+      <p>Article content goes here...</p>
+    </article>
+    <aside>
+      <h3>Aside</h3>
+      <ol>
+        <li><a href="#">Lorem, ipsum.</a></li>
+        <li><a href="#">Lorem, ipsum.</a></li>
+        <li><a href="#">Lorem, ipsum.</a></li>
+      </ol>
+    </aside>
+  </main>
+
+  <footer>
+    <p>&copy; All rights reserved.</p>
+  </footer>
+
+</body>
+
+</html>
