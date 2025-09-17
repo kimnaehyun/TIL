@@ -5,7 +5,7 @@ sys.stdin = open("input.txt")
 # -> 모든 재료를 골라보면서, A에 넣자
 # -> visited 로 구현 (1이라면 A에 들어감, 0이라면 B에 들어감)
 
-def cal_syerny(li):
+def cal_synergy(li):
     total = 0
 
     for i in range(len(li)):
