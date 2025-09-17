@@ -1,5 +1,5 @@
 import sys
-sys.stdin = open("input.txt")
+sys.stdin = open("sample_input.txt")
 
 # N // 2 개를 A에 넣고, 나머지는 B라고 가정
 # -> 모든 재료를 골라보면서, A에 넣자
