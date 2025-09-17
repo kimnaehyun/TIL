@@ -23,7 +23,7 @@ def get_synergy():
         else:
             B_list.append(i)
 
-    return cal_syerny(A_list), cal_syerny(B_list)
+    return cal_synergy(A_list), cal_synergy(B_list)
 
 # 종료조건: 재료의 반을 선택 --> 시너지 계산
 # 가지의수: 모든 재료(N)
