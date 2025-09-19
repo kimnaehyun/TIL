@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Throw</h1>
+  {% comment %} 1방법: url 직접 입력 
+  2방법: url naming 패턴{% endcomment %}
+<form action="{% url "articles:catch" %}">
+  <input type="text" id="message" name="throw">
+  <input type="submit">
+</form>
+{% endblock content %}

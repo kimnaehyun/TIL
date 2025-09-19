@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% comment %} 탬플릿 상속 {% endcomment %}
+
+{% block content %}
+{% comment %} DTL 변수, {{}} : 콧수염 괄호 {% endcomment %}
+  <h1>Hello, {{ name }}</h1>
+
+  <a href="{% url "articles:dinner" %}">dinner</a>
+  <a href="{% url "articles:search" %}">search</a>
+  <a href="{% url "articles:throw" %}">throw</a>
+  <a href="{% url "articles:detail" number %}">detail</a>
+
+{% endblock content %}

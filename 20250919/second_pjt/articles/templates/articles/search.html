@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+{% comment %} action : 요청을 보낼 url 주소 {% endcomment %}
+{% comment %} GET(조회) VS POST(보안) {% endcomment %}
+<form action="https://search.naver.com/search.naver" method="get">
+  <label for="message">검색어를 입력하세요.</label>
+  <input type="text" id="message" name="query">
+  <input type="submit">
+</form>
+{% endblock content %}
