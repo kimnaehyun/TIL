@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block content %}
+<p>주식에 대한, 투자자들의 목소리</p>
+<h1>주식 댓글 분석기</h1>
+
+<label for="company">회사이름을 입력하세요:</label>
+<form method="get" action="{% url 'crawlings:search' %}">
+  <input type="text" name="company" value="{{ company }}">
+  <input type="submit" value="검색">
+</form>
+
+{% if crawling %}
+<h2>{{ crawling.0.company_name }} ({{ crawling.0.code }})</h2>
+<ul>
+  {% for c in crawling %}
+  <li>
+    {{ c.comment }}
+    <form action="{% url 'crawlings:delete' c.pk %}" method="post" style="display:inline">
+      {% csrf_token %}
+      <input type="submit" value="삭제">
+    </form>
+  </li>
+  {% empty %}
+  <li>댓글이 없습니다.</li>
+  {% endfor %}
+</ul>
+{% endif %}
+
+
+{% endblock content %}
