@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <h1>게시판</h1>
+
+  <hr>
+    <a href="{% url 'articles:create'%}"> 게시글 생성 </a>
+  <hr>
+  
+
+  {% comment %} articles <- views.py 의 context {% endcomment %}
+  {% for article in articles %}
+    <p>글 id : {{article.pk}} </p>
+    {% comment %} articles <- app_name {% endcomment %}
+    <a href="{% url "articles:detail" article.pk %}">
+      <p>글 제목 : {{article.title}} </p>
+    </a>
+    <p>글 내용 : {{article.content}} </p>
+    <hr>
+  {% endfor %}
+
+{% endblock content %}
